@@ -2,7 +2,7 @@
 
 Sample application of using the <a href="https://bitcoinj.github.io/">BitcoinJ SDK</a> (MVP architecture).
 
-<b>When you launch application first time it needs to download peer network, it may takes up to 15 minutes, but it happens only once, so bi patiant and drink some tea or coffee meanwhile.</b>
+<b>When you launch application first time it needs to download peer network, it may takes up to 15 minutes, but it happens only once, so be patiant and drink some tea or coffee meanwhile.</b>
 
 # Functionality
 
