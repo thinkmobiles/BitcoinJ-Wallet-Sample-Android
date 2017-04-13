@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flDownloadContent_LDP">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_logo"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Initializing peer network...\nIt may takes up to 15 minutes\nBe patient, its only once"
+            android:gravity="center"
+            android:layout_marginTop="12dp"/>
+
+        <ProgressBar
+            android:id="@+id/pbProgress_LDP"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:max="100"
+            tools:progress="68"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvPercentage_LDP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="68 %"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>

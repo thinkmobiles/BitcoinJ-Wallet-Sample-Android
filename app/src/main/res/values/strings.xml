@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BitcoinWalletSample</string>
+    <string name="scan_qr">menu_scan_qr</string>
+    <string name="my_qr_code">menu_my_qr</string>
+    <string name="info">menu_info</string>
+
+    <string name="scan_recipient_qr">Scan recipient QR code</string>
+
+    <string name="about">This is sample Bitcoin Wallet application.
+        It uses TestNet3 bitcoin network where all coins got no real value. this app use BitcoinJ SDK. You probably wants to test it and for that you need get some test bitcoins.
+        \nIt\'s not a problem. For that follow next steps:
+        \n1. Click copy icon right to your bitcoin address.
+        \n2. Use following link: &lt;a href=\&quot;http://faucet.xeno-genesis.com/\&quot;&gt;here &lt;/a> or &lt;a href=\&quot;https://testnet.coinfaucet.eu/en/\&quot;&gt;here &lt;/a></string>
+</resources>

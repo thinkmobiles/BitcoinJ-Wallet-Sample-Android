@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_download_peers"
+        tools:visibility="gone" />
+
+    <include layout="@layout/layout_toolbar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlContent_AM"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_bitcoin" />
+
+                    <TextView
+                        android:id="@+id/tvMyBalance_AM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        tools:text="1.235324234234 BTC" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvMyAddress_AM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        tools:text="1DRnurMWfTWXL9oG8iVED8r6qubqPKw7Vj" />
+
+                    <ImageView
+                        android:id="@+id/ivCopy_AM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_content_copy_black_18dp"
+                        android:padding="4dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivMyQRAddress_AM"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    tools:background="@android:color/holo_orange_light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Show this address to sender" />
+
+                <TextView
+                    android:id="@+id/tvWalletFilePath_AM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/ic_insert_drive_file_black_24dp"
+                    android:drawablePadding="4dp"
+                    android:paddingEnd="16dp"
+                    android:paddingStart="16dp"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    tools:text="data/data/some/das/ge/dsesdfwwea/sdvsvwewef/vqwrw.wallet" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="8dp"
+                    android:text="Send"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvRecipientAddress_AM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:hint="Scan recipient QR"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingEnd="24dp"
+                    android:paddingStart="24dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount: "
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/etAmount_AM"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:cursorVisible="false"
+                        android:gravity="right"
+                        android:inputType="numberDecimal"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:text="0.00"
+                        android:textColor="@android:color/holo_orange_light"
+                        android:textStyle="bold"
+                        android:padding="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   BTC"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <Button
+                        android:id="@+id/btnSend_AM"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SEND" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
