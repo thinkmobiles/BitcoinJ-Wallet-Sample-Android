@@ -2,7 +2,7 @@
 
 Sample application of using the <a href="https://bitcoinj.github.io/">BitcoinJ SDK</a> (MVP architecture).
 
-When you launch application first time it needs to download peer network, it may takes up to 15 minutes, but it happens only once, so bi patiant and drink some tea or coffee meanwhile.
+<b>When you launch application first time it needs to download peer network, it may takes up to 15 minutes, but it happens only once, so bi patiant and drink some tea or coffee meanwhile.</b>
 
 # Functionality
 
@@ -16,10 +16,10 @@ Application works with official bitcoin test network (TestNet3) and contains nex
 * Scan recipient wallet address QR code
 
 # Screenshots
-<img src="scrs/loading.png" alt="Initializaqtion" width="288" height="512">&nbsp;
-<img src="scrs/home.png" alt="Main screen" width="288" height="512">&nbsp;
-<img src="scrs/free.png" alt="Get coins" width="288" height="512">
-<img src="scrs/scan.png" alt="Scan QR" width="288" height="512">
+<img src="srcs/loading.png" alt="Initializaqtion" width="288" height="512">&nbsp;
+<img src="srcs/home.png" alt="Main screen" width="288" height="512">&nbsp;
+<img src="srcs/free.png" alt="Get coins" width="288" height="512">
+<img src="srcs/scan.png" alt="Scan QR" width="288" height="512">
 
 # Service Information
 SDK tutorial https://bitcoinj.github.io/getting-started-java
