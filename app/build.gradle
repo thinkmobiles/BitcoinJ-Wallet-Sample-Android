@@ -23,6 +23,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    packagingOptions {
+        exclude 'lib/x86_64/darwin/libscrypt.dylib'
+        exclude 'lib/x86_64/freebsd/libscrypt.so'
+        exclude 'lib/x86_64/linux/libscrypt.so'
+    }
+
 }
 
 dependencies {
@@ -32,7 +39,7 @@ dependencies {
     annotationProcessor "org.androidannotations:androidannotations:4.2.0"
     compile "org.androidannotations:androidannotations-api:4.2.0"
     //BitcoinJ SDK
-    compile 'org.bitcoinj:bitcoinj-core:0.14.4'
+    compile 'org.bitcoinj:bitcoinj-core:+'
     //QR support
     compile 'com.github.kenglxn.QRGen:android:2.2.0'
     compile 'com.journeyapps:zxing-android-embedded:3.0.2@aar'
